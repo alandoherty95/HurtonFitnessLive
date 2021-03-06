@@ -1,0 +1,27 @@
+[
+    {
+        "question": "Hello, I'm Iain Hurton",
+        "answer": "I love all kinds of exercise including swimming, lifting weights, running and hiking. Exercise is a major part of my lifestyle. Fitness is my passion. I found my love of fitness at 16 years old and haven't looked back since.",
+        "image_source": "{{ url_for('static', filename='img/iain-boxing-colour.jpg') }}"
+    },
+    {
+        "question": "Why I got into fitness",
+        "answer": "I got into fitness at age 16. I was very unfit and had poor eating habits. My father had recently become more active at that time and asked me to join him in going to a bootcamp. I found it very difficult and so, it drove me to always push harder and better myself.",
+        "image_source": "{{ url_for('static', filename='img/iain-gloves.jpg') }}"
+    },
+    {
+        "question": "My favourites ways to exercise",
+        "answer": "My favourite way to exercise would be a push/pull training plan. Push exercises involve working on muscles in the chest, shoulders and triceps. Pull would focus on legs and core. That being said, I really enjoy circuit training because it is challenging and makes me want to better my last attempt.",
+        "image_source": "{{ url_for('static', filename='img/iain-stretch.jpg') }}"
+    },
+    {
+        "question": "Why I love teaching people how to swim",
+        "answer": "My parents always brought us swimming as kids. I truly believe it is a  necessity to obtain this skill from an early age as it could potentially save a life. Although not all my clients are young kids, the courage to try to learn an essential skill at any age is incredible and I find it very rewarding to be able to help them on this journey.",
+        "image_source": "{{ url_for('static', filename='img/iain-squat.jpg') }}"
+    },
+    {
+        "question": "Benefits of personal training",
+        "answer": "Fitness is my passion! The benefits, both physically and mentally, have really changed my life. Being able to help others, with the knowledge I have gained over the years in order to better themselves, is what makes me love doing what I do.",
+        "image_source": "{{ url_for('static', filename='img/iain-boxing.jpg') }}"
+    }
+]
