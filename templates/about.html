@@ -3,25 +3,42 @@
 
     <h2>{{ page_title }}</h2>
     <p>
-        Hello, my name is Iain Hurton. I love all kinds of exercise including swimming, lifting weights, running and hiking. Exercise is a major part of my
-        lifestyle. Fitness is my passion. I found my love of fitness at 16 years old and haven't looked back since.
+        Iain Hurton.
     </p>
 
     {% for member in company %}
 
         <div class="row featurette">
+
+            {% if loop.index % 2 != 0 %}
+
             <div class="col-md-7">
-                <h3>{{ member.question }}</h3>
-                        <p>
-                            {{ member.answer }}
-                        </p>
+                <h3>{{ loop.index }}. {{ member.question }}</h3>
+                <p>{{ member.answer }}</p>
             </div>
             <div class="col-md-5">
                 <img src="{{ member.image_source }}" alt="" class="featurette-image image-responsive">
             </div>
+
+            {% else %}
+
+            <div class="col-md-5">
+                <img src="{{ member.image_source }}" alt="" class="featurette-image image-responsive">
+            </div>
+            <div class="col-md-7">
+                <h3>{{ loop.index }}. {{ member.question }}</h3>
+                <p>{{ member.answer }}</p>
+            </div>
+
+            {% endif %}
+
         </div>
 
+        {% if loop.index != loop.lenght %}
+
         <hr class="featurette-divider">
+
+        {% endif %}
 
     {% endfor %}
 
