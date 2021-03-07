@@ -1,4 +1,42 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1>Home</h1>
+    <h1>{{ page_title }}</h1>
+
+
+    {% for member in events %}
+
+        <div class="row featurette">
+
+            {% if loop.index % 2 != 0 %}
+
+            <div class="col-md-7">
+                <h3>{{ loop.index }}. {{ member.exercise_type }}</h3>
+                <p>{{ member.exercise_description }}</p>
+            </div>
+            <div class="col-md-5">
+                <img src="{{ member.exercise_image_source }}" alt="" class="featurette-image image-responsive">
+            </div>
+
+            {% else %}
+
+            <div class="col-md-5">
+                <img src="{{ member.exercise_image_source }}" alt="" class="featurette-image image-responsive">
+            </div>
+            <div class="col-md-7">
+                <h3>{{ loop.index }}. {{ member.exercise_type }}</h3>
+                <p>{{ member.exercise_description }}</p>
+            </div>
+
+            {% endif %}
+
+        </div>
+
+        {% if loop.index != loop.lenght %}
+
+        <hr class="featurette-divider">
+
+        {% endif %}
+
+    {% endfor %}
+
 {% endblock %}

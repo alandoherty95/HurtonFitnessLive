@@ -1,0 +1,17 @@
+[
+    {
+        "exercise_type": "Zoom Exercise Classes",
+        "exercise_description": "Join our groiwng community of people exercising together online. Zoom classes every evening.",
+        "exercise_image_source": "https://github.com/alandoherty95/HurtonFitnessLive/blob/master/static/img/iain-boxing-colour.jpg?raw=true"
+    },
+    {
+        "exercise_type": "Personal Training",
+        "exercise_description": "Book your 1:1 personal training session for a time that suits your schedule. Reap the benefits of individual exercise classes.",
+        "exercise_image_source": "https://github.com/alandoherty95/HurtonFitnessLive/blob/master/static/img/iain-stretch.jpg?raw=true"
+    },
+    {
+        "exercise_type": "Bootcamps",
+        "exercise_description": "Get outdoors and get active with our community bootcamps.",
+        "exercise_image_source": "https://github.com/alandoherty95/HurtonFitnessLive/blob/master/static/img/iain-gloves.jpg?raw=true"
+    }
+]
